@@ -18,7 +18,12 @@
 This Function imports the timer 'div' as a variable, using it's id, so we can modify it as we wish.
 
 
-       var hr = 0; var min = 0; var sec = 0;
+       
+       var hr = 0;
+       
+       var min = 0; 
+       
+       var sec = 0;
 
  we are creating the hour, minute and second variables and we are declaring that their initial value is 0.
 

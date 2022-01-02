@@ -39,11 +39,15 @@ if the stopwatch is not running, turn it on and go to the timerCycle() function.
 
 if the stopwatch is running, turn it off. (This only runs if we click the 'Stop' button)
 
-      if (stoptime == false) 
+      if (stoptime == false) {
 
-{ verify that the stopwatch is on.
+ verify that the stopwatch is on.
 
-      sec = parseInt(sec); min = parseInt(min); hr = parseInt(hr);
+      sec = parseInt(sec); 
+
+      min = parseInt(min); 
+   
+      hr = parseInt(hr);
 
  these are used to parse a string into an integer. (if we have 1045 as a string and we want to use it as an integer, we parse it)
       

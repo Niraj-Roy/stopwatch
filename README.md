@@ -1,4 +1,4 @@
-
+# This is my First JavaScript Project :)
 <p align="center">
 <img src="https://github.com/Niraj-Roy/stopwatch/blob/main/Dmxv.gif">
 </p>
@@ -46,10 +46,37 @@ if the stopwatch is running, turn it off. (This only runs if we click the 'Stop'
 
 add 1 to seconds.
 
-      if (sec == 60) 
+      if (sec == 60) {
 
 if seconds are equal to 60, minutes = 1 and seconds becomes 0 again.
 
-      if (min == 60) 
+      if (min == 60) {
 
  if minutes are equal to 60, hours = 1 and seconds + minutes becomes 0 again.
+
+   ```if (sec < 10 || sec == 0) {
+   sec = '0' + sec;
+}
+if (min < 10 || min == 0) {
+   min = '0' + min;
+}
+if (hr < 10 || hr == 0) {
+   hr = '0' + hr;
+}
+```
+If seconds, minutes and/or hours are lower than 10, add a 0 in front. This is why we need to parse everything in the beginning: doing this operation they become strings.
+
+      timer.innerHTML = hr + ':' + min + ':' + sec;
+
+ add these values to the 'timer' div.
+
+     setTimeout("timerCycle()", 1000); 
+
+this will make sure there is a timeout of 1000 ms (1s) before repeating the 'timerCycle()'.
+
+     timer.innerHTML = '00:00:00'; 
+
+used to reset the timer to 00:00:00
+
+
+<h2 align="center">That's All , Hope u enjoyed Learning something new </h2>
